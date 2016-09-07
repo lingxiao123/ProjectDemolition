@@ -27,9 +27,11 @@ namespace ProjectDemolition.Relocatees
             string sql = string.Empty;
             sql += "SELECT ds.Id,ds.UserName,ds.CardID,ds.BankCard,ds.RreaName,";
             sql += "(ds.FrameNumber+ds.BrickNumber+ds.BrickWoodNumber+ds.EarthWoodNumber) as HouseArea,";
+            sql += "(ds.FrameMoney+ds.BarckMoney+ds.BrickWoodMoney+ds.EarthWoodMoney) as HouseMoney,";
             sql += "ds.DecorationNumber as DecorationArea,ds.DecorationMoney as DecorationMoney,ds.RunWaterNumber,ds.RunWaterMoney,ds.PublicWellNumber,ds.PublicWellMoney,";
             sql += "ds.BrickFenceNumber as BrickWallArea,ds.BrickFenceMoney as BrickWallMoney,(ds.BleacheryNumber+ds.StoneNumber) as SunPlaceArea,(ds.BleacheryMoney+ds.StoneMoney) as SunPlaceMoney,";
             sql += "(ds.OrangeResultNumber + ds.OrangeNoResultNumber + ds.OrangeThatResultNumber + ds.OtherResultNumber + ds.OtherNoResultNumber + ds.OtherThatResultNumber) as FruiterNumber,";
+            sql += "(ds.OrangeResultMoney+ds.OrangeNoResultMoney+ds.OrangeThatResultMoney+ds.OtherResultMoney+ds.OtherNoResultMoney+ds.OtherThatResultMoney) as FruiterMoney,";
             sql += "ds.OverPriceNumber as OverNumber, ds.OverMoney as OverMoney, ds.GardenPoolNumber, ds.GardenPoolMoney,";
             sql += "ds.GraveNumber, ds.GraveMoney, lc.WaterFiledNumber as WaterFiledArea, lc.WaterFiledMoney as WaterFiledMoney,";
             sql += "lc.DroughtFiledNumber as DryLandArea, lc.DroughtFiledMoney as DryLandMoney, lc.ReservoirNumber as ReservoirArea, lc.ReservoirMoney as ReservoirMoney,";
