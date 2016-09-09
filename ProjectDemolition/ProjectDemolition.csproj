@@ -2269,7 +2269,9 @@
     <Content Include="Login.aspx" />
     <Content Include="Relocatees\ReloCateesInfo_Approval.aspx" />
     <Content Include="Relocatees\RelocateesInfo_Edit.aspx" />
+    <Content Include="Relocatees\RolecateesInfo_LandCompen.aspx" />
     <Content Include="Relocatees\RolecateesInfo_List.aspx" />
+    <Content Include="Relocatees\RolecateesInfo_Survey.aspx" />
     <Content Include="res\css\common.css" />
     <Content Include="res\css\default.css" />
     <Content Include="res\css\main.css" />
@@ -4248,12 +4250,26 @@
     <Compile Include="Relocatees\RelocateesInfo_Edit.aspx.designer.cs">
       <DependentUpon>RelocateesInfo_Edit.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Relocatees\RolecateesInfo_LandCompen.aspx.cs">
+      <DependentUpon>RolecateesInfo_LandCompen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relocatees\RolecateesInfo_LandCompen.aspx.designer.cs">
+      <DependentUpon>RolecateesInfo_LandCompen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Relocatees\RolecateesInfo_List.aspx.cs">
       <DependentUpon>RolecateesInfo_List.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Relocatees\RolecateesInfo_List.aspx.designer.cs">
       <DependentUpon>RolecateesInfo_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relocatees\RolecateesInfo_Survey.aspx.cs">
+      <DependentUpon>RolecateesInfo_Survey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relocatees\RolecateesInfo_Survey.aspx.designer.cs">
+      <DependentUpon>RolecateesInfo_Survey.aspx</DependentUpon>
     </Compile>
     <Compile Include="Role\AddRole.aspx.cs">
       <DependentUpon>AddRole.aspx</DependentUpon>

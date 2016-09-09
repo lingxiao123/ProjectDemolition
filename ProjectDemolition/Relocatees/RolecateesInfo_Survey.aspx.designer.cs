@@ -10,7 +10,7 @@
 namespace ProjectDemolition.Relocatees {
     
     
-    public partial class RolecateesInfo_List {
+    public partial class RolecateesInfo_Survey {
         
         /// <summary>
         /// form1 控件。
@@ -40,42 +40,6 @@ namespace ProjectDemolition.Relocatees {
         protected global::FineUI.Panel Panel1;
         
         /// <summary>
-        /// Panel2 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.Panel Panel2;
-        
-        /// <summary>
-        /// sform1 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.Form sform1;
-        
-        /// <summary>
-        /// ddlBusType 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.DropDownList ddlBusType;
-        
-        /// <summary>
-        /// ddlStore 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.DropDownList ddlStore;
-        
-        /// <summary>
         /// Grid1 控件。
         /// </summary>
         /// <remarks>
@@ -94,40 +58,13 @@ namespace ProjectDemolition.Relocatees {
         protected global::FineUI.Toolbar toolgrid;
         
         /// <summary>
-        /// ToolbarSeparator4 控件。
+        /// Button1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::FineUI.ToolbarSeparator ToolbarSeparator4;
-        
-        /// <summary>
-        /// btnImport 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.Button btnImport;
-        
-        /// <summary>
-        /// ToolbarSeparator5 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.ToolbarSeparator ToolbarSeparator5;
-        
-        /// <summary>
-        /// btnSave 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.Button btnSave;
+        protected global::FineUI.Button Button1;
         
         /// <summary>
         /// ToolbarSeparator1 控件。
@@ -139,22 +76,13 @@ namespace ProjectDemolition.Relocatees {
         protected global::FineUI.ToolbarSeparator ToolbarSeparator1;
         
         /// <summary>
-        /// SurveyBatch 控件。
+        /// Id 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::FineUI.BoundField SurveyBatch;
-        
-        /// <summary>
-        /// LandBatch 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField LandBatch;
+        protected global::FineUI.BoundField Id;
         
         /// <summary>
         /// UserName 控件。
@@ -166,22 +94,94 @@ namespace ProjectDemolition.Relocatees {
         protected global::FineUI.BoundField UserName;
         
         /// <summary>
-        /// HouseArea 控件。
+        /// FrameArea 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::FineUI.BoundField HouseArea;
+        protected global::FineUI.BoundField FrameArea;
         
         /// <summary>
-        /// HouseMoney 控件。
+        /// FrameMoney 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::FineUI.BoundField HouseMoney;
+        protected global::FineUI.BoundField FrameMoney;
+        
+        /// <summary>
+        /// BrickArea 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField BrickArea;
+        
+        /// <summary>
+        /// BrickMoney 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField BrickMoney;
+        
+        /// <summary>
+        /// BrickWoodArea 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField BrickWoodArea;
+        
+        /// <summary>
+        /// BrickWoodMoney 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField BrickWoodMoney;
+        
+        /// <summary>
+        /// EarthWoodArea 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField EarthWoodArea;
+        
+        /// <summary>
+        /// EarthWoodMoney 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField EarthWoodMoney;
+        
+        /// <summary>
+        /// AffiliatedArea 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField AffiliatedArea;
+        
+        /// <summary>
+        /// AffiliatedMoney 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField AffiliatedMoney;
         
         /// <summary>
         /// DecorationArea 控件。
@@ -191,6 +191,15 @@ namespace ProjectDemolition.Relocatees {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::FineUI.BoundField DecorationArea;
+        
+        /// <summary>
+        /// DecorationPrice 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField DecorationPrice;
         
         /// <summary>
         /// DecorationMoney 控件。
@@ -256,40 +265,148 @@ namespace ProjectDemolition.Relocatees {
         protected global::FineUI.BoundField BrickWallMoney;
         
         /// <summary>
-        /// SunPlaceArea 控件。
+        /// BleacheryArea 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::FineUI.BoundField SunPlaceArea;
+        protected global::FineUI.BoundField BleacheryArea;
         
         /// <summary>
-        /// SunPlaceMoney 控件。
+        /// BleacheryMoney 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::FineUI.BoundField SunPlaceMoney;
+        protected global::FineUI.BoundField BleacheryMoney;
         
         /// <summary>
-        /// FruiterNumber 控件。
+        /// StoneArea 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::FineUI.BoundField FruiterNumber;
+        protected global::FineUI.BoundField StoneArea;
         
         /// <summary>
-        /// FruiterMoney 控件。
+        /// StoneMoney 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::FineUI.BoundField FruiterMoney;
+        protected global::FineUI.BoundField StoneMoney;
+        
+        /// <summary>
+        /// OrangeResultNumber 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField OrangeResultNumber;
+        
+        /// <summary>
+        /// OrangeResultMoney 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField OrangeResultMoney;
+        
+        /// <summary>
+        /// OrangeNoResultNumber 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField OrangeNoResultNumber;
+        
+        /// <summary>
+        /// OrangeNoResultMoney 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField OrangeNoResultMoney;
+        
+        /// <summary>
+        /// OrangeThatResultNumber 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField OrangeThatResultNumber;
+        
+        /// <summary>
+        /// OrangeThatResultMoney 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField OrangeThatResultMoney;
+        
+        /// <summary>
+        /// OtherResultNumber 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField OtherResultNumber;
+        
+        /// <summary>
+        /// OtherResultMoney 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField OtherResultMoney;
+        
+        /// <summary>
+        /// OtherNoResultNumber 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField OtherNoResultNumber;
+        
+        /// <summary>
+        /// OtherNoResultMoney 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField OtherNoResultMoney;
+        
+        /// <summary>
+        /// OtherThatResultNumber 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField OtherThatResultNumber;
+        
+        /// <summary>
+        /// OtherThatResultMoney 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField OtherThatResultMoney;
         
         /// <summary>
         /// OverNumber 控件。
@@ -319,6 +436,15 @@ namespace ProjectDemolition.Relocatees {
         protected global::FineUI.BoundField GardenPoolNumber;
         
         /// <summary>
+        /// GardenPoolPrice 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::FineUI.BoundField GardenPoolPrice;
+        
+        /// <summary>
         /// GardenPoolMoney 控件。
         /// </summary>
         /// <remarks>
@@ -346,168 +472,6 @@ namespace ProjectDemolition.Relocatees {
         protected global::FineUI.BoundField GraveMoney;
         
         /// <summary>
-        /// WaterFiledArea 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField WaterFiledArea;
-        
-        /// <summary>
-        /// WaterFiledMoney 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField WaterFiledMoney;
-        
-        /// <summary>
-        /// DryLandArea 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField DryLandArea;
-        
-        /// <summary>
-        /// DryLandMoney 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField DryLandMoney;
-        
-        /// <summary>
-        /// ReservoirArea 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField ReservoirArea;
-        
-        /// <summary>
-        /// ReservoirMoney 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField ReservoirMoney;
-        
-        /// <summary>
-        /// AbodeBaseArea 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField AbodeBaseArea;
-        
-        /// <summary>
-        /// AbodeBaseMoney 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField AbodeBaseMoney;
-        
-        /// <summary>
-        /// WoodLandArea 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField WoodLandArea;
-        
-        /// <summary>
-        /// WoodLandMoney 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField WoodLandMoney;
-        
-        /// <summary>
-        /// WasteLandArea 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField WasteLandArea;
-        
-        /// <summary>
-        /// WasteLandMoney 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField WasteLandMoney;
-        
-        /// <summary>
-        /// GardenWaterFiledArea 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField GardenWaterFiledArea;
-        
-        /// <summary>
-        /// GardenWaterFiledMoney 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField GardenWaterFiledMoney;
-        
-        /// <summary>
-        /// GardenDryLandArea 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField GardenDryLandArea;
-        
-        /// <summary>
-        /// GardenDryLandMoney 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField GardenDryLandMoney;
-        
-        /// <summary>
-        /// GardenOtherArea 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField GardenOtherArea;
-        
-        /// <summary>
-        /// GardenOtherMoney 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.BoundField GardenOtherMoney;
-        
-        /// <summary>
         /// TotalMoney 控件。
         /// </summary>
         /// <remarks>
@@ -533,14 +497,5 @@ namespace ProjectDemolition.Relocatees {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::FineUI.BoundField CardID;
-        
-        /// <summary>
-        /// hfSelectedIDS 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::FineUI.HiddenField hfSelectedIDS;
     }
 }

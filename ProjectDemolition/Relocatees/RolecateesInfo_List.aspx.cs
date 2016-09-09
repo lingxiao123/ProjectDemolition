@@ -8,6 +8,8 @@ using System.Data;
 using ProjectToYou.Code;
 using FineUI;
 using ProjectDemolition.Utility;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 namespace ProjectDemolition.Relocatees
 {
     public partial class RolecateesInfo_List :PageBase
@@ -16,6 +18,7 @@ namespace ProjectDemolition.Relocatees
         {
             if (!IsPostBack)
             {
+               
                 BindGrid();
             }
         }
@@ -126,33 +129,7 @@ namespace ProjectDemolition.Relocatees
 
         protected void btnSave_Click(object sender, EventArgs e)
         {
-            Dictionary<int, Dictionary<string, object>> modifiedDict = Grid1.GetModifiedDict();
-            try
-            {
-                int count = 0;
-                foreach (int rowIndex in modifiedDict.Keys)
-                {
-                    int rowID = Convert.ToInt32(Grid1.DataKeys[rowIndex][0]);
-                    GridRow row = Grid1.Rows[rowIndex];
-                    int status = Convert.ToInt32(Grid1.Rows[rowIndex].Values[2]);
-                    string datetime = DateTime.Now.ToString("yyyy-MM-dd");
-                    string sql = string.Format("update UserTable set Status={0},UpdateTime='{1}' where Id={2}", status, datetime, rowID);
-                    count += DBAccess.ExecTransSql(sql);
-                }
-                if (count > 0)
-                {
-                    Alert.ShowInTop("修改成功");
-                    BindGrid();
-                }
-                else
-                {
-                    Alert.ShowInTop("修改失败");
-                }
-            }
-            catch (Exception ex)
-            {
-                WriteLog.WriteError(ex);
-            }
+            PageContext.RegisterStartupScript("parent.addExampleTab(\"gridTab2\", \"Relocatees/RolecateesInfo_LandCompen.aspx\", \"征地汇总\")");
         }
         protected void Grid1_RowCommand(object sender, GridCommandEventArgs e)
         {
@@ -175,6 +152,59 @@ namespace ProjectDemolition.Relocatees
                 }
 
             }
+        }
+
+        protected void btnImport_Click(object sender, EventArgs e)
+        {
+            SyncSelectedRowIDArrayToHiddenField();
+            PageContext.RegisterStartupScript("parent.addExampleTab(\"gridTab2\", \"Relocatees/RolecateesInfo_Survey.aspx\", \"拆迁汇总\")");
+        }
+
+        private void SyncSelectedRowIDArrayToHiddenField()
+        {
+            List<string> ids = GetSelectedRowIDArrayFromHiddenField();
+
+            //List<string> selectedRowIDs = new List<string>(Grid1);
+            int[] selections = Grid1.SelectedRowIndexArray;
+
+            //foreach (GridRow row in Grid1.Rows)
+            //{
+            //    string rowID = row.RowID;
+            //    if (selectedRowIDs.Contains(rowID))
+            //    {
+            //        if (!ids.Contains(rowID))
+            //        {
+            //            ids.Add(rowID);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        if (ids.Contains(rowID))
+            //        {
+            //            ids.Remove(rowID);
+            //        }
+            //    }
+            //}
+        }
+        private List<string> GetSelectedRowIDArrayFromHiddenField()
+        {
+            JArray idsArray = new JArray();
+
+            string currentIDS = hfSelectedIDS.Text.Trim();
+            if (!String.IsNullOrEmpty(currentIDS))
+            {
+                idsArray = JArray.Parse(currentIDS);
+            }
+            else
+            {
+                idsArray = new JArray();
+            }
+            return new List<string>(idsArray.ToObject<string[]>());
+        }
+
+        protected void Grid1_RowSelect(object sender, GridRowSelectEventArgs e)
+        {
+            string str = e.RowIndex.ToString();
         }
     }
 }

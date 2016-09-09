@@ -5,31 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>拆迁补偿汇总</title>
 </head>
 <body>
     <form id="form1" runat="server">
     <f:PageManager ID="PageManager1" AutoSizePanelID="Panel1" runat="server" />
     <f:Panel ID="Panel1" runat="server" Width="100%" ShowBorder="false" ShowHeader="false" Layout="Region">
-    <Toolbars>
-        <f:Toolbar ID="toolb1" runat="server">
-            <Items>
-                <f:ToolbarSeparator ID="ToolbarSeparator4" runat="server"></f:ToolbarSeparator>
-                <f:Button ID="btnImport" runat="server" Text="新增用户"
-                        Icon="Add" EnablePostBack="false" >
-                </f:Button>
-                <f:Button ID="btnSave" runat="server" Text="保存修改" OnClick="btnSave_Click" Icon="Disk" >
-
-                </f:Button>
-                <f:Window ID="Window1" IconUrl="~/res/images/16/10.png" runat="server" Hidden="true"
-                    WindowPosition="Center" IsModal="true" Title="新增用户" EnableMaximize="true"
-                    EnableResize="true" Target="Self" EnableIFrame="true"
-                    Height="500px" Width="650px" >
-                </f:Window>
-                <f:ToolbarSeparator ID="ToolbarSeparator5" runat="server"></f:ToolbarSeparator>
-            </Items>
-        </f:Toolbar>
-    </Toolbars>
     <Items>
         <f:Panel ID="Panel2" runat="server" RegionPosition="top" BodyPadding="0px" ShowBorder="true" ShowHeader="true" Title="搜索条件">
             <Items>
@@ -63,12 +44,28 @@
                         </f:Form>
             </Items>
         </f:Panel>
-        <f:Grid ID="Grid1" Title="用户信息"   Width="100%" PageSize="5" ShowBorder="true" ShowHeader="true"
+        <f:Grid ID="Grid1" Title="拆迁信息汇总"   Width="100%" PageSize="1" ShowBorder="true" ShowHeader="true"
             AllowPaging="true" runat="server" EnableCheckBoxSelect="true"
             DataKeyNames="Id,UserName" IsDatabasePaging="true"   OnPageIndexChange="Grid1_PageIndexChange"
-            AllowSorting="true" SortField="Id" SortDirection="ASC" OnSort="Grid1_Sort" OnRowCommand="Grid1_RowCommand" >
+            AllowSorting="true" SortField="Id" SortDirection="ASC"  EnableRowSelectEvent="true"  OnRowSelect="Grid1_RowSelect"  OnSort="Grid1_Sort"
+             OnRowCommand="Grid1_RowCommand" ClearSelectedRowsAfterPaging="false" >
+            <Toolbars>
+                <f:Toolbar ID="toolgrid" runat="server">
+                    <Items>
+                        <f:ToolbarSeparator ID="ToolbarSeparator4" runat="server"></f:ToolbarSeparator>
+                        <f:Button ID="btnImport" runat="server" Text="拆迁汇总" Icon="ApplicationAdd" OnClick="btnImport_Click" >
+                        </f:Button>
+                        <f:ToolbarSeparator ID="ToolbarSeparator5" runat="server"></f:ToolbarSeparator>
+                        <f:Button ID="btnSave" runat="server" Text="征地汇总" OnClick="btnSave_Click" Icon="ApplicationAdd" >
+                        </f:Button>
+                        <f:ToolbarSeparator ID="ToolbarSeparator1" runat="server"></f:ToolbarSeparator>
+                    </Items>
+                </f:Toolbar>
+            </Toolbars>
             <Columns>
-                <f:BoundField ID="Id" DataField="Id" HeaderText="批次"></f:BoundField>
+                <f:RowNumberField></f:RowNumberField>
+                <f:BoundField ID="SurveyBatch" DataField="SurveyBatch" HeaderText="拆迁批次"></f:BoundField>
+                <f:BoundField ID="LandBatch" DataField="LandBatch" HeaderText="征地批次"></f:BoundField>
                 <f:BoundField ID="UserName" DataField="UserName" HeaderText="拆迁户姓名"></f:BoundField>
                 <f:GroupField HeaderText="房屋类别" TextAlign="Center">
                     <Columns>
@@ -126,11 +123,11 @@
                 </f:GroupField>
                 <f:GroupField HeaderText="坟墓" TextAlign="Center">
                     <Columns>
-                        <f:BoundField ID="GraveNumebr" DataField="GraveNumebr" HeaderText="坟墓数量"></f:BoundField>
+                        <f:BoundField ID="GraveNumber" DataField="GraveNumber" HeaderText="坟墓数量"></f:BoundField>
                         <f:BoundField ID="GraveMoney" DataField="GraveMoney" HeaderText="坟墓金额"></f:BoundField>
                     </Columns>
                 </f:GroupField>
-                <f:GroupField HeaderText="水田,人工高产油茶林,菜地,精养鱼塘" TextAlign="Center">
+                <f:GroupField HeaderText="水田,油茶林,菜地,精养鱼塘" TextAlign="Center">
                     <Columns>
                         <f:BoundField ID="WaterFiledArea" DataField="WaterFiledArea" HeaderText="水田面积"></f:BoundField>
                         <f:BoundField ID="WaterFiledMoney" DataField="WaterFiledMoney" HeaderText="水田金额"></f:BoundField>
@@ -156,7 +153,7 @@
                 </f:GroupField>
                 <f:GroupField HeaderText="林地" TextAlign="Center">
                     <Columns>
-                        <f:BoundField ID="WoodLandArea" DataField="WoodrLandArea" HeaderText="林地面积"></f:BoundField>
+                        <f:BoundField ID="WoodLandArea" DataField="WoodLandArea" HeaderText="林地面积"></f:BoundField>
                         <f:BoundField ID="WoodLandMoney" DataField="WoodLandMoney" HeaderText="林地金额"></f:BoundField>
                     </Columns>
                 </f:GroupField>
@@ -181,6 +178,8 @@
                 <f:BoundField ID="CardID" DataField="CardID" HeaderText="身份证号"></f:BoundField>
             </Columns>
         </f:Grid>
+        <f:HiddenField ID="hfSelectedIDS" runat="server">
+        </f:HiddenField>
     </Items>
     </f:Panel>
     </form>

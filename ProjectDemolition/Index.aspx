@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head runat="server">
-    <title></title>
+    <title>于都征迁系统</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <style>
         #header {
